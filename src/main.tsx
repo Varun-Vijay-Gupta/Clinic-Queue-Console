@@ -6,7 +6,11 @@ import "./styles/global.css";
 async function prepare() {
   if (typeof window !== "undefined") {
     const { worker } = await import("./mocks");
-    await worker.start();
+    await worker.start({
+      serviceWorker: {
+        url: `${import.meta.env.BASE_URL}mockServiceWorker.js`,
+      },
+    });
   }
 }
 
