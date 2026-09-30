@@ -82,3 +82,7 @@ For waits of 15 minutes or more, I use multiple signals instead of only color: w
 ### 5. New arrivals
 
 New customers are detected during polling and shown through a banner. This avoids suddenly moving the user's scroll position while they are checking the queue.
+
+### 6. Deployment
+
+Vercel : https://clinic-queue-console.vercel.app/
